@@ -11,9 +11,8 @@ module Weblinks
   class Application < Rails::Application
 
     config.assets.paths << Rails.root.join("app", "assets", "fonts")
-    # config.assets.enabled = true
+    config.assets.enabled = true
     config.serve_static_assets = true
-    config.action_dispatch.x_sendfile_header = 'X-Accel-Redirect'
     config.assets.compile = true
 
 
